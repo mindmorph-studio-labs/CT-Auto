@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/layout/navbar";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,9 +32,13 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.className} min-h-screen bg-background text-foreground antialiased flex flex-col`}>
-        {/* Le Fil d'Ariane est persistant sur toutes les pages (sauf l'accueil) */}
+        {/* 1. Navbar persistante en haut */}
+        <Navbar />
+        
+        {/* 2. Fil d'Ariane dynamique juste en dessous */}
         <Breadcrumb />
         
+        {/* 3. Contenu principal de la page */}
         <main className="flex-1 container mx-auto px-4 py-6">
           {children}
         </main>
