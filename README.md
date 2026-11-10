@@ -13,7 +13,7 @@ CT-Auto est un guichet unique d'orientation pour les démarches automobiles. Ce 
 - **Génération de leads** : Formulaires sécurisés avec validation des données en temps réel.
 
 ## 🛠️ Stack Technique
-- **Framework** : Next.js 15 (App Router) & React
+- **Framework** : Next.js 16.4.6 (App Router) & React
 - **Langage** : TypeScript (mode strict)
 - **Styling** : Tailwind CSS v4 + shadcn/ui (basé sur Radix UI)
 - **Base de données** : Prisma ORM (PostgreSQL / SQLite)
